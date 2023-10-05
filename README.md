@@ -17,11 +17,11 @@ compreende rua, bairro, cidade, estado e UF.
 
 O modelo lógico não normalizado é o seguinte:
 
-![image]( https://github.com/KeeOtth/Trabalho-BD/assets/86529029/4adff60e-387e-437d-a1fd-538f85cf1097)
+![image](https://github.com/KeeOtth/Trabalho-BD/assets/86529029/712c25fd-4737-4a16-a3be-9f22395bfdf7)
 
 Agora normalizando:
 
-![image](https://github.com/KeeOtth/Trabalho-BD/assets/86529029/45e5d653-e89c-4d1c-9cbd-d5ea3298dd06)
+![image](https://github.com/KeeOtth/Trabalho-BD/assets/86529029/6fe60b9c-4415-41aa-b260-2b6a03366bda)
 
 Para adequar o modelo lógico à 1FN eu abri os atributos que não eram atômicos, como era o caso de "endereço" e "telefone" em PACIENTE e "especialidades" em MEDICO,
 criei uma tabela telefone para guardar os valores de telefones e coloquei nela uma chave de paciente já que "telefone" é multivalorado e a relação com paciente é de 1 para n.
