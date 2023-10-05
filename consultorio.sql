@@ -52,7 +52,7 @@ CREATE TABLE PACIENTE(
     nome varchar(255),
     data_nascimento date,
     numero_plano int,
-    constraint fk_endereco_paciente foreign key(id_endereco) references ENDERECO(id_endereco),
+    constraint fk_endereco_paciente foreign key(id_endereco) references ENDERECO(id_endereco)
 );
 
 CREATE TABLE TELEFONE(
@@ -60,7 +60,7 @@ CREATE TABLE TELEFONE(
     id_paciente int,
     tel1 varchar(11),
     tel2 varchar(11),
-    constraint fk_paciente_telefone foreign key(id_paciente) references PACIENTE
+    constraint fk_paciente_telefone foreign key(id_paciente) references PACIENTE(id_paciente)
  );
 
 CREATE TABLE CONSULTA(
